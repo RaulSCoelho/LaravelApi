@@ -4,8 +4,6 @@ namespace App\Http\Controllers\Api\V1;
 
 use App\Filters\V1\InvoicesFilter;
 use App\Models\Invoice;
-use App\Http\Requests\StoreInvoiceRequest;
-use App\Http\Requests\UpdateInvoiceRequest;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\V1\InvoiceCollection;
 use App\Http\Resources\V1\InvoiceResource;
@@ -40,7 +38,7 @@ class InvoiceController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreInvoiceRequest $request)
+    public function store()
     {
         //
     }
@@ -64,7 +62,7 @@ class InvoiceController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateInvoiceRequest $request, Invoice $invoice)
+    public function update(Request $request, Invoice $invoice)
     {
         //
     }
